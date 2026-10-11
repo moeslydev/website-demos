@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northline Barbers — Cuts, fades &amp; hot towel shaves</title>
+  <meta name="description" content="Northline Barbers: classic cuts, skin fades, beard trims and hot towel shaves. Book online in under a minute.">
+  <meta name="theme-color" content="#14213d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>Northline</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-bar"></span><span class="sr-only">Open menu</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#services">Prices</a>
+        <a href="#team">Barbers</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#find">Find us</a>
+        <a class="btn btn-red" href="#book">Book now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <h1>Sharp cuts.<br>No waiting.</h1>
+        <p>Classic cuts, skin fades and hot towel shaves by barbers who take their time. Book your chair online, it takes under a minute.</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#book">Book a chair</a>
+          <a class="btn btn-line" href="#services">See prices</a>
+        </div>
+        <ul class="hero-proof">
+          <li><strong>4.9</strong> from 640 Google reviews</li>
+          <li><strong>Walk-ins</strong> welcome before noon</li>
+        </ul>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1400&q=75" alt="Client relaxing in a leather barber chair">
+      </div>
+    </section>
+
+    <div class="stripe" aria-hidden="true"></div>
+
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Prices</h2>
+          <p>Every service includes a consultation, a hot towel and styling. No hidden extras.</p>
+        </div>
+        <div class="price-cols">
+          <div>
+            <h3 class="price-group">Hair</h3>
+            <ul class="price-list">
+              <li><span class="pl-name">Classic cut</span><span class="pl-time">30 min</span><span class="pl-price">€18</span></li>
+              <li><span class="pl-name">Skin fade</span><span class="pl-time">40 min</span><span class="pl-price">€22</span></li>
+              <li><span class="pl-name">Scissor cut</span><span class="pl-time">45 min</span><span class="pl-price">€24</span></li>
+              <li><span class="pl-name">Kids cut (under 12)</span><span class="pl-time">25 min</span><span class="pl-price">€14</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="price-group">Beard &amp; shave</h3>
+            <ul class="price-list">
+              <li><span class="pl-name">Beard trim &amp; line-up</span><span class="pl-time">20 min</span><span class="pl-price">€12</span></li>
+              <li><span class="pl-name">Hot towel shave</span><span class="pl-time">35 min</span><span class="pl-price">€20</span></li>
+              <li class="pl-featured"><span class="pl-name">Cut &amp; beard</span><span class="pl-time">55 min</span><span class="pl-price">€30</span></li>
+              <li><span class="pl-name">The full works</span><span class="pl-time">75 min</span><span class="pl-price">€42</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="wrap">
+        <div class="section-head section-head-light">
+          <h2>Book your chair</h2>
+          <p>Pick a service, a barber and a time. You will get a text confirmation straight away.</p>
+        </div>
+
+        <div class="booker">
+          <div class="booker-steps">
+            <fieldset class="step">
+              <legend><span class="step-no">1</span>Service</legend>
+              <div class="chips" id="pick-service">
+                <button type="button" class="chip" data-value="Classic cut" data-price="18" data-time="30">Classic cut <small>€18</small></button>
+                <button type="button" class="chip" data-value="Skin fade" data-price="22" data-time="40">Skin fade <small>€22</small></button>
+                <button type="button" class="chip" data-value="Cut &amp; beard" data-price="30" data-time="55">Cut &amp; beard <small>€30</small></button>
+                <button type="button" class="chip" data-value="Beard trim" data-price="12" data-time="20">Beard trim <small>€12</small></button>
+                <button type="button" class="chip" data-value="Hot towel shave" data-price="20" data-time="35">Hot towel shave <small>€20</small></button>
+              </div>
+            </fieldset>
+
+            <fieldset class="step">
+              <legend><span class="step-no">2</span>Barber</legend>
+              <div class="chips" id="pick-barber">
+                <button type="button" class="chip" data-value="Any barber">First available</button>
+                <button type="button" class="chip" data-value="Luka">Luka</button>
+                <button type="button" class="chip" data-value="Dren">Dren</button>
+                <button type="button" class="chip" data-value="Arben">Arben</button>
+              </div>
+            </fieldset>
+
+            <fieldset class="step">
+              <legend><span class="step-no">3</span>Day &amp; time</legend>
+              <div class="days" id="pick-day"></div>
+              <div class="chips times" id="pick-time"></div>
+            </fieldset>
+          </div>
+
+          <aside class="summary" aria-live="polite">
+            <h3>Your booking</h3>
+            <dl>
+              <div><dt>Service</dt><dd id="s-service">Not chosen</dd></div>
+              <div><dt>Barber</dt><dd id="s-barber">Not chosen</dd></div>
+              <div><dt>When</dt><dd id="s-when">Not chosen</dd></div>
+              <div class="s-total"><dt>Total</dt><dd id="s-price">€0</dd></div>
+            </dl>
+            <form id="confirm-form" novalidate>
+              <label for="c-name">Name</label>
+              <input id="c-name" type="text" autocomplete="name" required>
+              <label for="c-phone">Mobile number</label>
+              <input id="c-phone" type="tel" autocomplete="tel" required>
+              <p class="form-error" id="c-error" role="alert"></p>
+              <button class="btn btn-red btn-wide" type="submit">Confirm booking</button>
+            </form>
+            <div class="confirmed" id="confirmed" tabindex="-1" hidden></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>The barbers</h2>
+          <p>Three chairs, three specialists, over 30 years of experience between them.</p>
+        </div>
+        <div class="team-grid">
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=75" alt="Barber using a straight razor" loading="lazy">
+            <h3>Luka</h3>
+            <p>Skin fades and razor detail. Owner, 14 years behind the chair.</p>
+          </article>
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1657105052497-f996284ffff8?auto=format&fit=crop&w=800&q=75" alt="Barber trimming hair with thinning shears" loading="lazy">
+            <h3>Dren</h3>
+            <p>Scissor cuts and longer styles. Trained in London and Milan.</p>
+          </article>
+          <article class="barber">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=75" alt="Barber trimming a beard with scissors" loading="lazy">
+            <h3>Arben</h3>
+            <p>Beard shaping and hot towel shaves. The calmest hands in town.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip" aria-label="Inside the shop">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=75" alt="Leather barber chair against a brick wall" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=75" alt="Clippers, scissors and grooming products" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=75" alt="Barber blow-drying a client's hair" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1647140655214-e4a2d914971f?auto=format&fit=crop&w=900&q=75" alt="Barber cutting hair with scissors" loading="lazy">
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>What clients say</h2>
+          <p>4.9 average from 640 reviews on Google.</p>
+        </div>
+        <div class="review-grid">
+          <figure class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Best fade I have had in years. Luka actually listens, and the booking took me thirty seconds on my phone.</blockquote>
+            <figcaption>Marco P.</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>The hot towel shave is worth every cent. Relaxed atmosphere, good coffee, always on time.</blockquote>
+            <figcaption>Daniel K.</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>I bring my son here too. They are patient with kids and the price is fair. We will not go anywhere else.</blockquote>
+            <figcaption>Ilir B.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="find" id="find">
+      <div class="wrap find-grid">
+        <div>
+          <h2>Find us</h2>
+          <address>Kastanienallee 48<br>10119 Berlin</address>
+          <ul class="hours">
+            <li><span>Mon – Fri</span><span>09:00 – 20:00</span></li>
+            <li><span>Saturday</span><span>09:00 – 18:00</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+          <p><a class="phone" href="tel:+4930123456">030 123 456</a></p>
+        </div>
+        <div class="map">
+          <iframe title="Map showing Northline Barbers on Kastanienallee, Berlin" src="https://www.google.com/maps?q=Kastanienallee+48,+10119+Berlin&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span class="logo"><span class="logo-mark" aria-hidden="true"></span>Northline</span>
+      <nav class="footer-links" aria-label="Social"><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Google reviews</a></nav>
+    </div>
+    <p class="demo-note">Demo website. Northline Barbers is a fictional business created as a design sample.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

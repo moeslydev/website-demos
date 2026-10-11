@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paidly — Invoices that get paid on time</title>
+  <meta name="description" content="Paidly lets freelancers send professional invoices in under a minute, take card payments, and chase late payers automatically.">
+  <meta name="theme-color" content="#0f3d3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top"><span class="logo-dot" aria-hidden="true"></span>Paidly</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="login" href="#">Log in</a>
+        <a class="btn btn-dark btn-sm" href="#start">Start free</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Send the invoice.<br>Get paid. Move on.</h1>
+          <p>Paidly lets freelancers create a professional invoice in under a minute, take card and bank payments, and chase late payers for you.</p>
+          <form class="signup" id="hero-signup" novalidate>
+            <label class="sr-only" for="hero-email">Work email</label>
+            <input id="hero-email" type="email" placeholder="you@studio.com" autocomplete="email" required>
+            <button class="btn btn-dark" type="submit">Start free</button>
+          </form>
+          <p class="signup-msg" id="hero-msg" role="status"></p>
+          <p class="hero-note">Free for your first 5 invoices. No card needed.</p>
+        </div>
+
+        <div class="hero-demo" aria-label="Example invoice being paid">
+          <div class="invoice" id="invoice">
+            <div class="inv-top">
+              <div>
+                <p class="inv-label">Invoice #0042</p>
+                <p class="inv-client">Northwind Studio</p>
+              </div>
+              <span class="status" id="inv-status" data-state="sent">Sent</span>
+            </div>
+            <table class="inv-lines">
+              <tr><td>Brand identity, phase 2</td><td>€2,400</td></tr>
+              <tr><td>Website design, 6 pages</td><td>€1,800</td></tr>
+              <tr><td>Revisions (4 hrs)</td><td>€320</td></tr>
+            </table>
+            <div class="inv-total"><span>Total</span><strong>€4,520.00</strong></div>
+            <ol class="timeline" id="timeline">
+              <li data-step="sent">Sent Monday, 09:14</li>
+              <li data-step="viewed">Viewed by client, 11:02</li>
+              <li data-step="paid">Paid by card, 11:05</li>
+            </ol>
+          </div>
+          <div class="toast" id="toast" aria-live="polite"><span class="toast-dot"></span>€4,520.00 received from Northwind Studio</div>
+          <button class="replay" id="replay" type="button">Replay</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Customers">
+      <div class="wrap trust-inner">
+        <p>Used by 12,000+ freelancers and small studios</p>
+        <ul class="brands">
+          <li>Fieldnote</li><li>Okto Studio</li><li>Halvor&amp;Co</li><li>Brightline</li><li>Mono Lab</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="wrap">
+        <h2 class="section-title">Less admin, fewer awkward emails.</h2>
+
+        <div class="feature">
+          <div class="feature-text">
+            <h3>Invoices in under a minute</h3>
+            <p>Save your clients, rates and tax settings once. Every new invoice is filled in for you, with your logo and payment details already on it.</p>
+          </div>
+          <div class="feature-visual" aria-hidden="true">
+            <div class="mini-form">
+              <div class="mini-row"><span>Client</span><span class="mini-val">Northwind Studio</span></div>
+              <div class="mini-row"><span>Rate</span><span class="mini-val">€80 / hour</span></div>
+              <div class="mini-row"><span>Due</span><span class="mini-val">14 days</span></div>
+              <div class="mini-btn">Send invoice</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature feature-flip">
+          <div class="feature-text">
+            <h3>Polite reminders, sent for you</h3>
+            <p>When an invoice is late, Paidly sends a friendly reminder after 3 days, then 7, then 14. You choose the wording once and never chase again.</p>
+          </div>
+          <div class="feature-visual" aria-hidden="true">
+            <ul class="reminders">
+              <li><span class="rem-day">Day 3</span>Just a quick reminder about invoice #0039</li>
+              <li><span class="rem-day">Day 7</span>Invoice #0039 is now one week overdue</li>
+              <li class="rem-paid"><span class="rem-day">Day 8</span>Paid in full. Reminders stopped.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="feature-text">
+            <h3>Know what's coming in</h3>
+            <p>See paid, pending and overdue at a glance, and export everything for your accountant in one click at the end of the quarter.</p>
+          </div>
+          <div class="feature-visual" aria-hidden="true">
+            <div class="bars">
+              <div class="bar"><span>Jul</span></div>
+              <div class="bar"><span>Aug</span></div>
+              <div class="bar"><span>Sep</span></div>
+              <div class="bar bar-now"><span>Oct</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="wrap">
+        <h2 class="section-title">Set up in three steps</h2>
+        <ol class="step-list">
+          <li><h3>Add your details</h3><p>Business name, logo and how you want to be paid. Takes two minutes.</p></li>
+          <li><h3>Create an invoice</h3><p>Pick a client, add your hours or items, and hit send.</p></li>
+          <li><h3>Get paid</h3><p>Clients pay by card or bank transfer from a secure link. You get notified instantly.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <div class="pricing-head">
+          <h2 class="section-title">Simple pricing</h2>
+          <div class="billing" role="group" aria-label="Billing period">
+            <button type="button" class="bill" data-period="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" class="bill" data-period="yearly" aria-pressed="false">Yearly <span class="save">2 months free</span></button>
+          </div>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <h3>Starter</h3>
+            <p class="plan-for">For getting started</p>
+            <p class="plan-price"><span class="amount" data-monthly="0" data-yearly="0">€0</span><span class="per">/ month</span></p>
+            <ul>
+              <li>5 invoices per month</li>
+              <li>Card &amp; bank payments</li>
+              <li>Paidly branding on invoices</li>
+            </ul>
+            <a class="btn btn-line btn-wide" href="#start">Start free</a>
+          </article>
+          <article class="plan plan-main">
+            <p class="plan-tag">Most popular</p>
+            <h3>Freelancer</h3>
+            <p class="plan-for">For full-time freelancers</p>
+            <p class="plan-price"><span class="amount" data-monthly="12" data-yearly="10">€12</span><span class="per">/ month</span></p>
+            <ul>
+              <li>Unlimited invoices</li>
+              <li>Automatic reminders</li>
+              <li>Your logo, no Paidly branding</li>
+              <li>Quarterly exports</li>
+            </ul>
+            <a class="btn btn-mint btn-wide" href="#start">Try free for 14 days</a>
+          </article>
+          <article class="plan">
+            <h3>Studio</h3>
+            <p class="plan-for">For small teams</p>
+            <p class="plan-price"><span class="amount" data-monthly="29" data-yearly="24">€29</span><span class="per">/ month</span></p>
+            <ul>
+              <li>Everything in Freelancer</li>
+              <li>Up to 5 team members</li>
+              <li>Multiple currencies</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-line btn-wide" href="#start">Try free for 14 days</a>
+          </article>
+        </div>
+        <p class="billing-note" id="billing-note">Billed monthly. Cancel any time.</p>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="wrap">
+        <figure>
+          <blockquote>I used to spend Friday afternoons chasing money. Now the reminders go out on their own and I've had no late payments since March.</blockquote>
+          <figcaption><strong>Sara Lindqvist</strong> Illustrator, Stockholm</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <h2 class="section-title">Questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary>How do my clients pay?</summary>
+            <p>Every invoice includes a secure payment link. Clients can pay by card, Apple Pay, Google Pay or bank transfer, without creating an account.</p>
+          </details>
+          <details>
+            <summary>Are there transaction fees?</summary>
+            <p>Card payments cost 1.4% + €0.25, the same as the payment processor charges us. Bank transfers are free.</p>
+          </details>
+          <details>
+            <summary>Can I use my own logo and colours?</summary>
+            <p>Yes. On the Freelancer and Studio plans your invoices carry only your branding.</p>
+          </details>
+          <details>
+            <summary>Can I cancel any time?</summary>
+            <p>Yes. There are no contracts. If you cancel, you keep access until the end of your billing period and can export all your data.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="wrap cta-inner">
+        <h2>Your next invoice could be paid by Friday.</h2>
+        <form class="signup signup-light" id="cta-signup" novalidate>
+          <label class="sr-only" for="cta-email">Work email</label>
+          <input id="cta-email" type="email" placeholder="you@studio.com" autocomplete="email" required>
+          <button class="btn btn-mint" type="submit">Start free</button>
+        </form>
+        <p class="signup-msg" id="cta-msg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="logo" href="#top"><span class="logo-dot" aria-hidden="true"></span>Paidly</a>
+      <nav aria-label="Footer"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#">Privacy</a></nav>
+    </div>
+    <p class="demo-note">Demo website. Paidly is a fictional product created as a design sample.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

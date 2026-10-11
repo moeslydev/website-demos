@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brace — Wood-fired kitchen &amp; wine bar</title>
+  <meta name="description" content="Brace is a wood-fired Italian kitchen and wine bar. Seasonal plates cooked over oak embers. Book a table online.">
+  <meta name="theme-color" content="#1c2620">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top" aria-label="Brace, back to top">Brace</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span><span class="sr-only">Open menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a class="btn btn-brass" href="#book">Book a table</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&fit=crop&w=2000&q=75" alt="Chef pouring sauce over a plated steak">
+      <div class="wrap hero-content">
+        <h1 class="hero-title">Cooked over<br>oak embers.</h1>
+        <p class="hero-text">A wood-fired Italian kitchen and wine bar. Seasonal plates, fresh pasta made every morning, and a cellar of small-producer wines.</p>
+        <div class="hero-actions">
+          <a class="btn btn-brass" href="#book">Book a table</a>
+          <a class="btn btn-ghost" href="#menu">See the menu</a>
+        </div>
+      </div>
+      <p class="hero-hours wrap">Open tonight from 17:30 &nbsp;/&nbsp; Kitchen closes 22:30</p>
+    </section>
+
+    <section class="story" id="story">
+      <div class="wrap story-grid">
+        <div class="story-text">
+          <h2>One fire, one kitchen,<br>nothing frozen.</h2>
+          <p>Brace started in 2012 as a twelve-seat counter around a single oak-burning oven. The oven is still the heart of the kitchen. Everything that leaves it, from the bread to the bistecca, picks up a little of the smoke.</p>
+          <p>We buy from farms within a day's drive, change the menu when the season does, and roll every sheet of pasta by hand before lunch.</p>
+          <dl class="facts">
+            <div><dt>Seats</dt><dd>48 inside, 20 on the terrace</dd></div>
+            <div><dt>Wine list</dt><dd>120 bottles, 18 by the glass</dd></div>
+            <div><dt>Private dining</dt><dd>Up to 14 guests</dd></div>
+          </dl>
+        </div>
+        <figure class="story-media">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1200&q=75" alt="Warm wooden dining room with set tables" loading="lazy">
+          <img class="story-media-small" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=75" alt="Plated dish on a white ceramic plate" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="menu-head">
+          <h2>The menu</h2>
+          <p>Changes with the season. Ask us about allergies, we are happy to adapt most dishes.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Menu sections">
+          <button class="tab" role="tab" id="tab-start" aria-controls="panel-start" aria-selected="true">To start</button>
+          <button class="tab" role="tab" id="tab-pasta" aria-controls="panel-pasta" aria-selected="false" tabindex="-1">Pasta</button>
+          <button class="tab" role="tab" id="tab-fire" aria-controls="panel-fire" aria-selected="false" tabindex="-1">From the fire</button>
+          <button class="tab" role="tab" id="tab-sweet" aria-controls="panel-sweet" aria-selected="false" tabindex="-1">Dolci</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-start" aria-labelledby="tab-start">
+          <ul class="dishes">
+            <li><div class="dish-line"><h3>Ember-roasted focaccia</h3><span class="price">€6</span></div><p>Rosemary, flaked salt, cold-pressed olive oil</p></li>
+            <li><div class="dish-line"><h3>Burrata &amp; charred peaches</h3><span class="price">€14</span></div><p>Basil oil, toasted hazelnuts, aged balsamic</p></li>
+            <li><div class="dish-line"><h3>Beef carpaccio</h3><span class="price">€15</span></div><p>Smoked anchovy mayo, capers, rocket, parmesan</p></li>
+            <li><div class="dish-line"><h3>Grilled octopus</h3><span class="price">€17</span></div><p>Crushed potatoes, 'nduja butter, lemon</p></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-pasta" aria-labelledby="tab-pasta" hidden>
+          <ul class="dishes">
+            <li><div class="dish-line"><h3>Cacio e pepe</h3><span class="price">€15</span></div><p>Hand-cut tonnarelli, pecorino romano, black pepper</p></li>
+            <li><div class="dish-line"><h3>Pappardelle al ragù</h3><span class="price">€19</span></div><p>Eight-hour beef shin ragù, smoked over oak</p></li>
+            <li><div class="dish-line"><h3>Ricotta agnolotti</h3><span class="price">€18</span></div><p>Brown butter, sage, roasted pumpkin</p></li>
+            <li><div class="dish-line"><h3>Linguine alle vongole</h3><span class="price">€22</span></div><p>Clams, white wine, garlic, chilli, parsley</p></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-fire" aria-labelledby="tab-fire" hidden>
+          <ul class="dishes">
+            <li><div class="dish-line"><h3>Bistecca for two</h3><span class="price">€68</span></div><p>1kg dry-aged T-bone, salsa verde, roast potatoes</p></li>
+            <li><div class="dish-line"><h3>Whole sea bream</h3><span class="price">€29</span></div><p>Fennel, blood orange, green olives</p></li>
+            <li><div class="dish-line"><h3>Half chicken al mattone</h3><span class="price">€24</span></div><p>Lemon, garlic, charred greens</p></li>
+            <li><div class="dish-line"><h3>Smoked aubergine</h3><span class="price">€18</span></div><p>Whipped feta, pomegranate, mint (vegetarian)</p></li>
+          </ul>
+        </div>
+        <div class="panel" role="tabpanel" id="panel-sweet" aria-labelledby="tab-sweet" hidden>
+          <ul class="dishes">
+            <li><div class="dish-line"><h3>Tiramisù</h3><span class="price">€9</span></div><p>Made at the table, espresso, mascarpone, cocoa</p></li>
+            <li><div class="dish-line"><h3>Burnt Basque cheesecake</h3><span class="price">€10</span></div><p>Baked in the wood oven, sour cherries</p></li>
+            <li><div class="dish-line"><h3>Affogato</h3><span class="price">€7</span></div><p>Fior di latte gelato, double espresso</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-label="Gallery">
+      <div class="gallery-grid">
+        <img class="g1" src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=1400&q=75" alt="Guests dining in the restaurant" loading="lazy">
+        <img class="g2" src="https://images.unsplash.com/photo-1676471926534-d5c9771909fa?auto=format&fit=crop&w=900&q=75" alt="Fish with vegetables on a white plate" loading="lazy">
+        <img class="g3" src="https://images.unsplash.com/photo-1574966739987-65e38db0f7ce?auto=format&fit=crop&w=900&q=75" alt="Wine glasses on a dining table" loading="lazy">
+        <img class="g4" src="https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?auto=format&fit=crop&w=900&q=75" alt="Full dining room in the evening" loading="lazy">
+        <img class="g5" src="https://images.unsplash.com/photo-1509710398975-6454dcdf049f?auto=format&fit=crop&w=900&q=75" alt="Close-up of a stemmed wine glass" loading="lazy">
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="wrap book-grid">
+        <div class="book-intro">
+          <h2>Book a table</h2>
+          <p>Tables are held for 15 minutes. For groups larger than 8 or private dining, call us on <a href="tel:+43123456789">+43 1 234 567 89</a>.</p>
+        </div>
+        <form class="book-form" id="book-form" novalidate>
+          <div class="field">
+            <label for="b-name">Name</label>
+            <input id="b-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="b-phone">Phone</label>
+            <input id="b-phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+          <div class="field">
+            <label for="b-date">Date</label>
+            <input id="b-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="b-time">Time</label>
+            <select id="b-time" name="time" required>
+              <option value="">Choose a time</option>
+              <option>17:30</option><option>18:00</option><option>18:30</option><option>19:00</option>
+              <option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-guests">Guests</label>
+            <select id="b-guests" name="guests" required>
+              <option value="2">2 guests</option><option value="1">1 guest</option><option value="3">3 guests</option>
+              <option value="4">4 guests</option><option value="5">5 guests</option><option value="6">6 guests</option>
+              <option value="7">7 guests</option><option value="8">8 guests</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="b-notes">Notes <span class="optional">(optional)</span></label>
+            <textarea id="b-notes" name="notes" rows="3" placeholder="Allergies, a birthday, a terrace table…"></textarea>
+          </div>
+          <p class="form-error" id="book-error" role="alert"></p>
+          <button class="btn btn-brass btn-wide" type="submit">Request table</button>
+          <div class="form-success" id="book-success" tabindex="-1" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <div class="visit-info">
+          <h2>Visit us</h2>
+          <address>Neubaugasse 21<br>1070 Vienna, Austria</address>
+          <table class="hours">
+            <caption class="sr-only">Opening hours</caption>
+            <tr><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tue – Thu</th><td>17:30 – 23:00</td></tr>
+            <tr><th scope="row">Fri – Sat</th><td>12:00 – 15:00, 17:30 – 00:00</td></tr>
+            <tr><th scope="row">Sunday</th><td>12:00 – 21:00</td></tr>
+          </table>
+          <p class="visit-links"><a href="tel:+43123456789">+43 1 234 567 89</a><br><a href="mailto:hello@brace-kitchen.com">hello@brace-kitchen.com</a></p>
+        </div>
+        <div class="map">
+          <iframe title="Map showing Brace on Neubaugasse, Vienna" src="https://www.google.com/maps?q=Neubaugasse+21,+1070+Wien&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="logo logo-small">Brace</p>
+      <p>Wood-fired kitchen &amp; wine bar, Vienna</p>
+      <p class="social"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></p>
+    </div>
+    <p class="demo-note">Demo website. Brace is a fictional restaurant created as a design sample.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
